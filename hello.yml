@@ -3,4 +3,7 @@
   tasks:
     - name: Hello Message
       debug:
-        msg: "Hello World! from development branch"
+        msg: 
+          - "Hello World! from development branch"
+          - avengers_branch - "{{ avengers_branch }}"
+          - source_control_branch - "{{ source_control_branch }}"
