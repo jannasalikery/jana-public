@@ -7,3 +7,7 @@
           - "Hello World! from master branch............."
           #- avengers_branch - "{{ avengers_branch }}"
           #- source_control_branch - "{{ source_control_branch }}"
+          
+    - name: Show env variable
+      debug:
+        msg: "{{ lookup('env','HOME') }}"
