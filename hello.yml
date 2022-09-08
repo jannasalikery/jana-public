@@ -10,4 +10,4 @@
           
     - name: Show env variable
       debug:
-        msg: "{{ lookup('env','HOME') }}"
+        msg: "{{ lookup('env','PWD') }}"
