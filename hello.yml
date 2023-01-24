@@ -4,3 +4,15 @@
     - name: Hello Message
       debug:
         msg: "Hello World! from jana branch, Thanks for using my branch......."
+          
+    - name: Show env variable
+      debug:
+        msg: "{{ lookup('env','PWD') }}"
+        
+    - name: shell
+      shell: "ls -ltr {{ lookup('env','PWD') }}"
+      register: shell
+     
+    - name: debug shell
+      debug: 
+        msg: "{{ shell }}"
