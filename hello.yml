@@ -3,10 +3,7 @@
   tasks:
     - name: Hello Message
       debug:
-        msg: 
-          - "Hello World! from master branch............."
-          #- avengers_branch - "{{ avengers_branch }}"
-          #- source_control_branch - "{{ source_control_branch }}"
+        msg: "Hello World! from jana branch, Thanks for using my branch......."
           
     - name: Show env variable
       debug:
